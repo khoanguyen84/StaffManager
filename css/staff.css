@@ -12,14 +12,14 @@
     justify-content: space-between;
 }
 .left-side{
-    flex: 2;
+    flex: 20%;
     background-color: cadetblue;
     padding: 5px 3px;
     border-radius: 3px;
     
 }
 .right-side{
-    flex:8;
+    flex:80%;
 }
 
 .add-area{
@@ -33,6 +33,7 @@
 
 .form-group>label{
     display: block;
+    margin-bottom: 5px;
 }
 
 .form-control{
@@ -40,6 +41,7 @@
     outline: none;
     padding: 5px 0px;
     width: 100%;
+    border-radius: 2px;
 }
 .row{
     width: 100%;
