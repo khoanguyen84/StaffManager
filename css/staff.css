@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.container{
+    max-width: 1200px;
+    display: flex;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+.left-side{
+    flex: 2;
+    background-color: cadetblue;
+    padding: 5px 3px;
+    border-radius: 3px;
+    
+}
+.right-side{
+    flex:8;
+}
+
+.add-area{
+    width: 100%;
+}
+
+.form-group{
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.form-group>label{
+    display: block;
+}
+
+.form-control{
+    border: none;
+    outline: none;
+    padding: 5px 0px;
+    width: 100%;
+}
+.row{
+    width: 100%;
+}
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-sm{
+    padding: 10px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.btn-warning:hover {
+    color: #212529;
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.table{
+    width: 100%;
+}
+.table, .table tr, .table th, .table td{
+    border-collapse: collapse;
+}
+
+.thead-dark{
+    background-color: #333333;
+    color:#f3f3f3;
+}
+
+.thead-dark th{
+    padding: 10px 3px;
+    font-size: small;
+}
+
+.avatar{
+    width: 60px;
+    height: 60px;
+    border-radius:50%
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+
+.table>tbody>tr:nth-child(odd){
+    background-color: rgb(201, 191, 191);
+}
+
+.table>tbody>tr:hover{
+    cursor: pointer;
+    background-color: rgb(165, 146, 146);
+}
+.table>tbody>tr>td{
+    padding: 0px 5px;
+}
