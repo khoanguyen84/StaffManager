@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <title>Staff management</title>
     <link rel="stylesheet" href="css/staff.css">
 </head>
+
 <body>
-    
+
     <div class="container">
         <div class="left-side">
             <div class="add-area">
@@ -35,17 +37,23 @@
                 </div>
                 <div class="form-group">
                     <label></label>
-                    <input type="radio" class="custom-form-control" name="status" checked>Active
-                    <input type="radio" class="custom-form-control" name="status">Inactive
+                    <input type="radio" class="custom-form-control" id="radioActive" name="status" checked>Active
+                    <input type="radio" class="custom-form-control" id="radioInactive" name="status">Inactive
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-warning" onclick="createStaff()">Create</button>
+                    <button class="btn btn-warning" id="create-btn" onclick="createStaff()">Create</button>
+                    <button class="btn btn-primary d-none" id="update-btn" onclick="updateStaff()">Update</button>
+                    <button class="btn btn-danger d-none" id="cancel-btn" onclick="cancel()">Cancel</button>
+                    <input type="hidden" id="staffId" value="0">
                 </div>
             </div>
         </div>
         <div class="right-side">
             <div class="row">
-                <button class="btn btn-warning">Remove All</button>
+                <div class="nav-bar">
+                    <input type="search" class="search-control" oninput="search(this)">
+                    <button class="btn btn-warning">Remove All</button>
+                </div>
             </div>
             <div class="row">
                 <table class="table">
@@ -53,17 +61,22 @@
                         <tr>
                             <th><input type="checkbox"></th>
                             <th>#ID</th>
-                            <th>Fullname</th>
+                            <th>Fullname
+                                <span class="sort-item" title="Acsending" onclick="sort('asc', 'fullname')">&#x25B2;</span>
+                                <span class="sort-item" title="Descending" onclick="sort('desc', 'fullname')">&#x25BC;</span></th>
                             <th>Avatar</th>
                             <th>Dob</th>
                             <th>Email</th>
-                            <th>Salary</th>
+                            <th>Salary
+                                <span class="sort-item" title="Acsending" onclick="sort('asc', 'salary')">&#x25B2;</span>
+                                <span class="sort-item" title="Descending" onclick="sort('desc', 'salary')">&#x25BC;</span>
+                            </th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        
+
                     </tbody>
                 </table>
             </div>
@@ -71,4 +84,5 @@
     </div>
     <script src="scripts/staff.js"></script>
 </body>
+
 </html>
