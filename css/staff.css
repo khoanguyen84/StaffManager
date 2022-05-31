@@ -8,18 +8,18 @@
 .container{
     max-width: 1200px;
     display: flex;
-    margin: 0px auto;
+    margin: 2px auto 0px auto; 
     justify-content: space-between;
 }
 .left-side{
-    flex: 20%;
+    width: 20.5%;
     background-color: cadetblue;
     padding: 5px 3px;
-    border-radius: 3px;
+    border-radius: 5px;
     
 }
 .right-side{
-    flex:80%;
+    width:79%;
 }
 
 .add-area{
@@ -49,8 +49,8 @@
 .search-control{
     border: none;
     outline: none;
-    padding: 5px;
-    border-radius: 2px;
+    padding: 3px;
+    border-radius: 3px;
     border: 1px solid gray;
     flex: 1;
 }
@@ -178,4 +178,16 @@
 .sort-item{
     color: white;
     cursor: pointer;
+}
+
+@media (max-width: 670px) {
+    .container{
+        display: inline-block;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+    }
 }

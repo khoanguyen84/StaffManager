@@ -87,9 +87,6 @@ function init() {
 }
 
 function renderStaff(data) {
-//   data.sort(function (staff_1, staff_2) {
-//     return staff_2.id - staff_1.id;
-//   });
   let htmls = data.map(function (staff) {
     return `
         <tr>
@@ -103,7 +100,7 @@ function renderStaff(data) {
         <td class="text-center">${staff.email}</td>
         <td class="text-right">${Helper.formatCurrency(staff.salary)}</td>
         <td class="text-center">${staff.status ? "Active" : "Inactive"}</td>
-        <td class="text-center">
+        <td class="text-right">
             <button class="btn btn-success btn-sm" onclick="getStaff(${
               staff.id
             })">Edit</button>
